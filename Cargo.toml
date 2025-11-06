@@ -1,0 +1,23 @@
+[package]
+name = "geo-omerc"
+version = "0.1.0"
+authors = ["Ronaldo Racum <ronaldo@racum.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/racum/geo-omerc"
+repository = "https://github.com/racum/geo-omerc"
+keywords = ["geo", "geography", "geospatial", "gis", "cartography"]
+categories = ["science::geo"]
+description = "Convert geo types between geodesic degrees and cartesian meters using Oblique Mercator."
+edition = "2024"
+
+[dependencies]
+geo = {version = "^0.31", default-features = false}
+geodesy = {version = "^0.14", default-features = false}
+
+[features]
+wasm = ["geodesy/js"]
+
+[dev-dependencies]
+assert_approx_eq = "^1.1"
+geojson = {version = "^0.24", default-features = false}
