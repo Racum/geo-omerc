@@ -12,12 +12,12 @@ description = "Convert geo types between geodesic degrees and cartesian meters u
 edition = "2024"
 
 [dependencies]
-geo = {version = "^0.31", default-features = false}
-geodesy = {version = "^0.14", default-features = false}
+geo = {version = "^0.33", default-features = false}
+geodesy = {version = "^0.15", default-features = false}
 
 [features]
 wasm = ["geodesy/js"]
 
 [dev-dependencies]
 assert_approx_eq = "^1.1"
-geojson = {version = "^0.24", default-features = false}
+geojson = {version = "^1.0", default-features = false}
